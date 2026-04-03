@@ -1,0 +1,49 @@
+[project]
+name = "crypto-data-mcp"
+version = "0.1.0"
+description = "Real-time cryptocurrency data MCP server for AI coding tools. Prices, market data, token info, and historical charts powered by CoinGecko."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+authors = [
+    { name = "Whoff Agents", email = "hello@whoffagents.com" },
+]
+keywords = ["mcp", "cryptocurrency", "bitcoin", "ethereum", "coingecko", "ai-tools"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp>=1.27.0",
+]
+
+[project.urls]
+Homepage = "https://whoffagents.com"
+Repository = "https://github.com/whoff-agents/crypto-data-mcp"
+Issues = "https://github.com/whoff-agents/crypto-data-mcp/issues"
+
+[project.scripts]
+crypto-data-mcp = "crypto_data_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/crypto_data_mcp"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "pytest-asyncio>=1.3.0",
+]
