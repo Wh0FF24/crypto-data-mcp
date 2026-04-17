@@ -1,5 +1,6 @@
 # crypto-data-mcp
 
+[![SafeSkill 93/100](https://img.shields.io/badge/SafeSkill-93%2F100_Verified%20Safe-brightgreen)](https://safeskill.dev/scan/wh0ff24-crypto-data-mcp)
 Real-time cryptocurrency data for AI coding tools. An MCP server that gives Claude Code, Cursor, and other MCP-compatible tools access to live prices, market data, token info, and historical charts -- powered by CoinGecko.
 
 Built by [Whoff Agents](https://whoffagents.com).
