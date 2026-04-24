@@ -43,7 +43,7 @@ class CoinGeckoClient:
                 timeout=REQUEST_TIMEOUT,
                 headers={
                     "Accept": "application/json",
-                    "User-Agent": "crypto-data-mcp/0.1.0",
+                    "User-Agent": "crypto-data-mcp/1.0.0",
                 },
             )
         return self._client

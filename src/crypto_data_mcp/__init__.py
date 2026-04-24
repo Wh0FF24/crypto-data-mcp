@@ -7,4 +7,4 @@ and historical charts via the CoinGecko API.
 Built by Whoff Agents — https://whoffagents.com
 """
 
-__version__ = "0.1.0"
+__version__ = "1.0.0"

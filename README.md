@@ -1,29 +1,35 @@
 # crypto-data-mcp
 
+[![CI](https://github.com/Wh0FF24/crypto-data-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/Wh0FF24/crypto-data-mcp/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/crypto-data-mcp)](https://pypi.org/project/crypto-data-mcp/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Real-time cryptocurrency data for AI coding tools. An MCP server that gives Claude Code, Cursor, and other MCP-compatible tools access to live prices, market data, token info, and historical charts -- powered by CoinGecko.
 
 Built by [Whoff Agents](https://whoffagents.com).
 
 ## Installation
 
-### Quick Start (recommended)
+### Fastest: one-liner with uvx (no install needed)
 
 ```bash
-# Clone the repo
-git clone https://github.com/whoff-agents/crypto-data-mcp.git
-cd crypto-data-mcp
-
-# Install with uv (recommended)
-uv sync
-
-# Or install with pip
-pip install -e .
+uvx crypto-data-mcp
 ```
 
-### From PyPI (coming soon)
+### Install from PyPI
 
 ```bash
 pip install crypto-data-mcp
+# or
+uv add crypto-data-mcp
+```
+
+### From source
+
+```bash
+git clone https://github.com/Wh0FF24/crypto-data-mcp.git
+cd crypto-data-mcp
+uv sync
 ```
 
 ## Usage with Claude Code
@@ -34,17 +40,14 @@ Add to your Claude Code MCP config at `~/.claude/claude_desktop_config.json`:
 {
   "mcpServers": {
     "crypto-data": {
-      "command": "uv",
-      "args": [
-        "--directory", "/path/to/crypto-data-mcp",
-        "run", "crypto-data-mcp"
-      ]
+      "command": "uvx",
+      "args": ["crypto-data-mcp"]
     }
   }
 }
 ```
 
-Or if installed globally via pip:
+Or if installed via pip/uv:
 
 ```json
 {
