@@ -232,3 +232,8 @@ Visit [whoffagents.com](https://whoffagents.com) for updates.
 ## License
 
 MIT
+
+## Related
+
+- **[whoff-agents](https://github.com/Wh0FF24/whoff-agents)** — free Claude Code skills for multi-agent workflows, from the same team. Includes context-anchor skill + Atlas Starter Kit.
+
