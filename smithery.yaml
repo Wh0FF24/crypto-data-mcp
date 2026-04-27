@@ -5,4 +5,4 @@ startCommand:
     required: []
     properties: {}
   commandFunction: |-
-    (config) => ({ command: 'uvx', args: ['crypto-data-mcp'] })
+    (config) => ({ command: 'uvx', args: ['--from', 'git+https://github.com/Wh0FF24/crypto-data-mcp@main', 'crypto-data-mcp'] })
