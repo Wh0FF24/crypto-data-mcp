@@ -229,6 +229,12 @@ uv run crypto-data-mcp
 
 Visit [whoffagents.com](https://whoffagents.com) for updates.
 
+## Get the Next One Before It Hits GitHub
+
+We ship a new MCP tool or agent pattern most weeks.
+Subscribers get early access + the build notes that don't make it into the README.
+→ [Subscribe free at whoffagents.com](https://www.whoffagents.com/#newsletter)
+
 ## License
 
 MIT
