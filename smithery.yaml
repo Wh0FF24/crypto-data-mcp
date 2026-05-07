@@ -5,4 +5,4 @@ startCommand:
     required: []
     properties: {}
   commandFunction: |-
-    (config) => ({ command: 'uvx', args: ['--from', 'git+https://github.com/Wh0FF24/crypto-data-mcp@main', 'crypto-data-mcp'] })
+    (config) => ({ command: 'docker', args: ['run', '--rm', '-i', 'ghcr.io/wh0ff24/crypto-data-mcp:latest'] })
