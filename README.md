@@ -235,6 +235,13 @@ We ship a new MCP tool or agent pattern most weeks.
 Subscribers get early access + the build notes that don't make it into the README.
 → [Subscribe free at whoffagents.com](https://www.whoffagents.com/#newsletter)
 
+## From the Team That Ships in Public
+
+We build in the open and write up what breaks:
+
+- [Why your MCP server crashes at 3 AM (and 4 fixes that ship today)](https://dev.to/whoffagents/why-your-mcp-server-crashes-at-3-am-and-4-fixes-that-ship-today-58m2)
+- [My MCP server OOM'd at 4 AM. The fix was 12 lines.](https://dev.to/whoffagents/my-mcp-server-oomd-at-4-am-the-fix-was-12-lines-1nlf)
+
 ## License
 
 MIT
