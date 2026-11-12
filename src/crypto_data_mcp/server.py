@@ -11,13 +11,19 @@ Built by Whoff Agents — https://whoffagents.com
 import json
 import logging
 
-from mcp.server import FastMCP
+try:
+    # mcp >= 2.0 renamed FastMCP to MCPServer. The constructor, the .tool()
+    # decorator and .run() all keep the signatures used below, so a plain
+    # alias is enough to support both major versions.
+    from mcp.server import MCPServer as _Server
+except ImportError:  # pragma: no cover - mcp 1.x
+    from mcp.server import FastMCP as _Server
 
 from .coingecko import CoinGeckoClient, CoinGeckoError
 
 logger = logging.getLogger(__name__)
 
-mcp = FastMCP(
+mcp = _Server(
     "crypto-data-mcp",
     instructions=(
         "Real-time cryptocurrency data powered by CoinGecko (free, no API key). "

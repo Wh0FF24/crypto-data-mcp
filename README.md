@@ -192,6 +192,12 @@ Get historical price data as timestamp/price pairs for charting and analysis.
 
 The server includes a built-in mapping for 70+ popular tokens (BTC, ETH, SOL, USDT, USDC, BNB, XRP, ADA, DOGE, AVAX, and many more). For tokens not in the built-in map, it automatically searches CoinGecko to resolve the symbol.
 
+## MCP SDK Compatibility
+
+Works with both major versions of the Python MCP SDK: `mcp` 1.x and 2.x
+(2.0 renamed `FastMCP` to `MCPServer`; the server detects which one is
+installed at import time). Tested against 1.30.0 and 2.3.0.
+
 ## Data Source
 
 All data comes from the [CoinGecko API](https://www.coingecko.com/en/api) (free tier). The server includes:
